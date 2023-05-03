@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<style type="text/css">
+		
+		#div{
+			font-family: 'Amatic SC', cursive;
+		}
+		
+		#div2{
+			font-family: 'Amatic SC', cursive;
+		}
+		
+		#div1{
+				border-style: double;
+				border-width: thick;
+				border-color: black;}
+			
+			
+
+	</style>
+</head>
+<body id="div1" bgcolor="#0F3B82 ">
+	
+	<big><p id="div"><mark>60 secs = 1 minuite, 1 hour = 60 minuites 1hour = 3600 seconds</mark></p></big>
+	<form>
+<h1 id="div">Measurement converter</h1>
+<label id="div2">Enter seconds:</label>
+<input type="number" name="meas2" id="meas2"><br>
+<label id="div2">Enter minuites:</label>
+<input type="number" name="meas4" id="meas4"><br>
+<label id="div2">Enter hours:</label>
+<input type="number" name="meas5" id="meas5"><br>
+<button type="submit" onclick="Compute()" id="div">Calculate</button>
+</form>
+<script>
+ 	
+	let meas1=60, meas3=3600
+
+
+	function Compute(){
+	var meas2 = document.getElementById("meas2").value;
+	var meas4 = document.getElementById("meas4").value;
+	var meas5 = document.getElementById("meas5").value;
+	var quotient = Number (meas2) / Number (meas1);	
+	var product = Number (meas4) * Number (meas1);	
+	var product2 = Number (meas5) * Number (meas3);
+
+
+	alert("The amount is: minuites" + quotient + "\n" + "The amount is: minuites" + product + "\n" + "The amount is: seconds" + product2);
+	}
+</script>
+<!--https://pngtree.com/free-backgrounds-photos/mathematics-->
+</body>
+</html>
